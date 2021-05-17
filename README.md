@@ -175,7 +175,13 @@ ___
 
 ## Stage 6
 In this stage you will build and push a Docker image to a remote Docker Hub repository. First, login to your Docker Hub account. To do so, access your Jenkins instance command line:
+
 ``` docker exec -it jenkins-empik bash  ```
+Then, execute:
+```
+docker login
+```
+
 Provide your credentials. After successful login change your Jenkinsfile so that it looks like this:
 ```
 pipeline {
@@ -202,9 +208,16 @@ pipeline {
     }
 }
 ```
-Remember to replace <your_account_name> with the actual name of your Docker Hub account.
 
+Remember to replace <your_account_name> with the actual name of your Docker Hub account.
 Jenkinsfile has been divided into two separate steps. First step builds the image of your application, while the other pushes the result to a remote Docker Hub repository.
+Finally, push changes to remote repository. To do so, navigate in command line to directory with your local repository and run the following commands:
+```
+git add .
+git commit -m 'Modify Jenkinsfile'
+git push origin main
+```
+After changes have been pushed, refresh page with Jenkins instance. You should see that a new job has been created.
 
 ___
 
@@ -381,8 +394,15 @@ Text "Anna is a palindrome" should be returned.
 ___
 
 ## Stage 6
-In this stage you will build and push a Docker image to a remote Docker Hub repository. First, login to your Docker Hub account. To do so, access your Jenkins instance command line:
-``` docker exec -it jenkins-empik bash  ```
+In this stage you will build and push a Docker image to a remote Docker Hub repository. First, login to your Docker Hub account. 
+To do so, access your Jenkins instance command line:
+``` docker exec -it jenkins-empik bash  
+```
+Then, execute:
+```
+docker login
+```
+
 Provide your credentials. After successful login change your Jenkinsfile so that it looks like this:
 ```
 pipeline {
@@ -409,9 +429,14 @@ pipeline {
     }
 }
 ```
-
 Remember to replace <your_account_name> with the actual name of your Docker Hub account.
-
 Jenkinsfile has been divided into two separate steps. First step builds the image of your application, while the other pushes the result to a remote Docker Hub repository.
+Finally, push changes to remote repository. To do so, navigate in command line to directory with your local repository and run the following commands:
+```
+git add .
+git commit -m 'Modify Jenkinsfile'
+git push origin main
+```
+After changes have been pushed, refresh page with Jenkins instance. You should see that a new job has been created.
 
 ___
