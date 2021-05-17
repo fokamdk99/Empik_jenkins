@@ -176,7 +176,9 @@ ___
 ## Stage 6
 In this stage you will build and push a Docker image to a remote Docker Hub repository. First, login to your Docker Hub account. To do so, access your Jenkins instance command line:
 
-``` docker exec -it jenkins-empik bash  ```
+``` 
+docker exec -it jenkins-empik bash
+```
 Then, execute:
 ```
 docker login
@@ -396,7 +398,8 @@ ___
 ## Stage 6
 In this stage you will build and push a Docker image to a remote Docker Hub repository. First, login to your Docker Hub account. 
 To do so, access your Jenkins instance command line:
-``` docker exec -it jenkins-empik bash  
+```
+docker exec -it jenkins-empik bash  
 ```
 Then, execute:
 ```
