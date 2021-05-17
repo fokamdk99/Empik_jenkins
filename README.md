@@ -58,7 +58,7 @@ Connect Jenkins to github repository.
 * Download zipped version of this repository (click "code" and then "download ZIP"). Unzip folder and then move contents to the folder of your repository. Folder structure should look like this: 
  
 ``` .
-└── przykladowy_empik
+└── Empik_jenkins
     └── springboot-first-app
         ├── jenkins
         │   └── scripts
@@ -265,7 +265,7 @@ Connect Jenkins to github repository.
 * Download zipped version of this repository (click "code" and then "download ZIP"). Unzip folder and then move contents to the folder of your repository. Folder structure should look like this: 
  
 ``` .
-└── przykladowy_empik
+└── Empik_jenkins
     └── springboot-first-app
         ├── jenkins
         │   └── scripts
