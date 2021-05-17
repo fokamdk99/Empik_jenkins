@@ -287,7 +287,7 @@ Connect Jenkins to github repository.
                             └── springbootfirstapp 
 ```
 * Open "settings" tab, choose "webhooks" option and click "Add webhook". It is required to provide an ip address and port that Jenkins instance operates on. For development purposes you will use the instance running locally on your machine. In order for Github to "see" that instance, follow these instructions:
-    * Open link: ``` https://ngrok.com/download ``` and download ngrok version for windows.
+    * Open link: ``` https://ngrok.com/download ``` and download ngrok version for linux.
     * unzip the folder and navigate to it
     * create a free account. After registration, copy an automatically generated link with authorisation token. It should look like this: ``` ./ngrok authtoken <your_auth_token> ```
     * In the command line run the copied instruction.
