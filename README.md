@@ -142,7 +142,7 @@ ___
 ## Stage 5
 Wrap your application in a Docker image, building it in Jenkins. Check that your container is running.
 
-To wrap you application in a Docker image, create the following Dockerfile:
+To wrap you application in a Docker image, create the following Dockerfile and place it in the same folder where Jenkinsfile is stored:
 ```
 FROM maven:3.8.1-openjdk-11-slim AS MAVEN_BUILD1
 
@@ -364,7 +364,7 @@ ___
 ## Stage 5
 Wrap your application in a Docker image, building it in Jenkins. Check that your container is running.
 
-To wrap you application in a Docker image, create the following Dockerfile:
+To wrap you application in a Docker image, create the following Dockerfile and place it in the same folder where Jenkinsfile is stored:
 ```
 FROM maven:3.8.1-openjdk-11-slim AS MAVEN_BUILD1
 
